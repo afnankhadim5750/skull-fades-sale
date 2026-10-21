@@ -1,6 +1,6 @@
 # Skull Fades
 
-Demo website concept for **Skull Fades** — Sale, UK.
+Demo website concept for **Skull Fades** — Sale.
 
 Live preview: https://skull-fades-sale-mockup.netlify.app
 
