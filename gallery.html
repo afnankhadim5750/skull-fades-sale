@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery — Skull Fades · Sale, Manchester</title>
+<meta name="description" content="Inside Skull Fades barbershop, Sale, Manchester — the chairs, the craft and the tools.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="concept-badge"><i class="bi bi-palette"></i> Design concept</div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="index.html">Skull<span class="slash">/</span>Fades</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><i class="bi bi-list"></i></button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="tel:07591298630" class="nav-phone"><i class="bi bi-telephone"></i> 07591 298630</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">The atmosphere</span>
+      <h1>Gallery</h1>
+      <p>Dark walls, warm light, sharp steel. A look inside the shop at 1 Hereford Street.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="gallery-grid">
+        <figure>
+          <img src="images/shop-interior.webp" alt="Painterly illustration of the Skull Fades shop interior at dusk" loading="lazy">
+          <figcaption><b>The shop floor</b>Vintage chairs, dark wood, warm light</figcaption>
+        </figure>
+        <figure>
+          <img src="images/hero-barber.webp" alt="Painterly illustration of a barber giving a skin fade" loading="lazy">
+          <figcaption><b>The fade</b>Skin-tight blends, the house signature</figcaption>
+        </figure>
+        <figure>
+          <img src="images/razor-detail.webp" alt="Painterly close-up of a straight razor hot-towel shave" loading="lazy">
+          <figcaption><b>The shave</b>Straight razor, steamed towel, steady hand</figcaption>
+        </figure>
+        <figure>
+          <img src="images/clippers-still-life.webp" alt="Painterly still life of barber tools on a dark counter" loading="lazy">
+          <figcaption><b>The tools</b>Clippers, steel and badger brush</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-red">
+    <div class="wrap">
+      <h2>Like what you see?</h2>
+      <p>Come and sit in the chair. Walk-ins welcome, appointments preferred.</p>
+      <div class="band-cta">
+        <a class="btn btn-bone" href="tel:07591298630"><i class="bi bi-telephone"></i> 07591 298630</a>
+        <a class="btn btn-outline-w" href="services.html"><i class="bi bi-scissors"></i> See services</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html" style="margin-bottom:14px;">Skull<span class="slash">/</span>Fades</a>
+        <p style="color: var(--bone-dim); max-width: 40ch;">Sale's sharpest barbershop since 2014. 1 Hereford Street, Sale, Trafford M33 7XN.</p>
+      </div>
+      <div>
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Visit</h4>
+        <ul>
+          <li>1 Hereford Street, Sale</li>
+          <li>Trafford M33 7XN</li>
+          <li><a href="tel:07591298630">07591 298630</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>© 2026 Skull Fades · Design concept — not the live site</span>
+      <span>Mon–Sat open · Sun closed</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var btn = document.getElementById('menuToggle');
+  var nav = document.getElementById('mainNav');
+  btn.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.innerHTML = open ? '<i class="bi bi-x-lg"></i>' : '<i class="bi bi-list"></i>';
+  });
+  nav.querySelectorAll('a').forEach(function (a) {
+    a.addEventListener('click', function () { nav.classList.remove('open'); });
+  });
+})();
+</script>
+</body>
+</html>
